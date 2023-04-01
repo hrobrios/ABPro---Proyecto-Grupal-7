@@ -1,0 +1,233 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	color: aliceblue
+}
+
+
+/*MOVILE*/
+
+@media screen and (max-width: 768px) {
+
+	/*distribución de espacios y diseño*/
+
+	[class*="col-"] {
+		width: 100%;
+		padding: 15px;
+		font-size: 4vw;
+	}
+
+
+
+	section nav li ul {
+		font-size: 3vw;
+	}
+
+
+	.col-8 {
+		display: flex;
+		background-color: rgb(157, 153, 183);
+		border: 1px solid black;
+		width: 63vw;
+		
+	}
+
+	.row-1 {
+
+		background-color: rgb(201, 92, 49);
+		border: 2px solid rgb(255, 255, 255);
+	}
+
+	.row-5 {
+		background-color: rgb(201, 92, 49);
+		border: 2px solid rgb(255, 255, 255);
+	}
+
+	/*texto e imagenes*/
+
+	tbody tr td img {
+		width: 20vw;
+	}
+
+	nav.col-8 a img {
+		max-width: 40px;
+		width: 7vw;
+		border: solid black 3px;
+		background-color: green;
+		float: right;
+	}
+	
+	div.col-8 {
+		display: none;
+	}
+	
+	tbody tr td {
+		font-size: 3vw;
+	}
+
+	#comida table tbody tr th img {
+		width: 1vw;
+		max-width: 10px;
+		float: right;
+	}
+
+	div a img { /*logo header*/
+		width: 64vw;
+		margin: 20px;
+		min-width: 290px;
+	}
+
+	map img {
+		width: 64vw;
+		margin: 20px;
+		min-width: 290px;
+	}
+
+	div article img {
+		width: 80vw;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	div.col-1 {
+		padding-left: 0;
+		border-left: 0;
+	}
+	
+
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 769px) {
+
+	/*distribución de espacios y diseño*/
+
+	[class*="col-"] {
+		padding: 15px;
+	}
+
+	.col-1 {
+		width: 100%;
+		height: 80px;
+		margin: 0;
+		background-color: darkgoldenrod;
+		border: solid black 2px;
+	}
+
+	.col-2 {
+		width: 50%;
+	}
+
+	.col-3 {
+		width: 33.3%;
+		height: 250px;
+		float: left;
+		text-align: center;
+		background-color: darkslategray;
+	}
+
+	.col-8 {
+		width: 12.5%;
+		height: 65px;
+		float: left;
+	}
+
+	.row-1 {
+		width: 5%;
+		background-color: rgb(201, 92, 49);
+		border: 2px solid rgb(255, 255, 255);
+	}
+
+	.row-5 {
+		height: 80px;
+		width: 18%;
+		max-width: 200px;
+		background-color: rgb(201, 92, 49);
+		border: 2px solid rgb(255, 255, 255);
+	}
+
+
+	ul {
+		list-style: none;
+	}
+
+
+	/*texto e imágenes*/
+
+	/*header*/
+
+	header nav.row ul li a {
+		font-size: 1.5vw;
+		background-color: rgb(157, 153, 183);
+		border: solid black 1px;
+	}
+
+	a[href="carrito.html"] {
+        float: right;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	div a.col-3 img {
+		width: 200px;
+	}
+
+	nav.col-8 a img {
+		max-width: 40px;
+		border: solid black 3px;
+		background-color: green;
+		float: right;
+	}
+
+
+	/*contenido*/
+
+	#comida img {
+		display: flex;
+		height: 80px;
+		float: right;
+	}
+
+	aside.col-2 map img {
+		width: 500px;
+		float: center;
+	}
+
+	div.col-2 img {
+		width: 50%;
+
+	}
+
+	div div.col-2 {
+		float: left;
+	}
+
+	/*footer*/
+
+	footer {
+		text-align: center;
+		background-color: darkgoldenrod;
+	}
+
+	nav ul li a.col-8::after {
+		content: "|";
+	}
+
+	nav ul li a.col-8::before {
+		content: "|";
+	}
+
+
+}
